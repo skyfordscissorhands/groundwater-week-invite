@@ -1,11 +1,84 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta property="og:title" content="Jeff Brammer of Associated Industries invites you to Groundwater Week — Add to Calendar">
-  <meta property="og:description" content="Join us in New Orleans, Dec 9–11, 2025. Save the date now!">
-  <meta property="og:image" content="https://www.associatedindustriesgroup.com/ggw-200px-logo-white.png">
-  <meta http-equiv="refresh" content="0; url=/index.html">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Groundwater Week — Add to Calendar</title>
+  <meta name="description" content="Add Groundwater Week (Dec 9–11, 2025 in New Orleans, LA) to your calendar." />
+  <meta property="og:title" content="Jeff Brammer of Associated Industries invites you to Groundwater Week — Add to Calendar" />
+  <meta property="og:description" content="Tap to add Groundwater Week (Dec 9–11, 2025) to your calendar." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#2563eb" />
+  <style>
+    :root {
+      --bg1: #0ea5e9;
+      --bg2: #22c55e;
+      --card: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --btn: #2563eb;
+      --btn-ink: #ffffff;
+      --radius: 20px;
+      --shadow-lg: 0 20px 45px rgba(2, 6, 23, .18);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      color: var(--ink);
+      background: linear-gradient(180deg, #eef2ff 0%, #f8fafc 60%);
+      display: grid; place-items: center; padding: 28px;
+    }
+    .wrap { max-width: 860px; width: 100%; }
+    .card {
+      background: var(--card); border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(15, 23, 42, .06);
+      overflow: hidden;
+      max-width: 500px;   /* keeps the invite a nice size on desktop */
+      width: 100%;        /* still flexible for mobile */
+    margin: 0 auto;     /* centers it */
+    }
+    .banner img {
+      width: 100%; height: auto; display: block;
+    }
+    .content { padding: clamp(18px, 3.5vw, 28px); text-align: center; }
+    h1 { font-size: clamp(26px, 4.2vw, 40px); line-height: 1.2; margin: 12px 0; }
+    .meta { margin: 16px 0; color: var(--muted); }
+    .meta div { margin: 4px 0; }
+    .cta { display: grid; gap: 12px; margin-top: 20px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      text-decoration: none; font-weight: 700;
+      border-radius: 14px; padding: 14px 18px;
+      transition: background .2s ease;
+    }
+    .btn.primary { background: var(--btn); color: var(--btn-ink); }
+    .btn.secondary { background: #fff; color: var(--ink); border: 1px solid #cbd5e1; }
+    .note { margin-top: 14px; font-size: 13px; color: var(--muted); }
+  </style>
 </head>
-<body></body>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="banner">
+        <!-- Swap in your clear 500px logo file -->
+        <img src="ggw-200px-logo-white.png" alt="Groundwater Week 2025 logo" />
+      </div>
+      <div class="content">
+        <h1>Groundwater Week</h1>
+        <div class="meta">
+          <div><b>Dates:</b> Tue, Dec 9, 2025 — Thu, Dec 11, 2025</div>
+          <div><b>Time:</b> 8:00 AM – 8:00 PM (America/Chicago)</div>
+          <div><b>Location:</b> New Orleans, Louisiana</div>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="./Groundwater_Week.ics" download>📅 Add to Calendar (.ics)</a>
+          <a class="btn secondary" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Groundwater+Week&dates=20251209T080000/20251211T200000&details=Groundwater+week&location=New+Orleans%2C+Louisiana&ctz=America%2FChicago" target="_blank">🗓️ Add on Google Calendar</a>
+        </div>
+        <div class="note">Tip: Works on Apple, Google, and Outlook calendars.</div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
